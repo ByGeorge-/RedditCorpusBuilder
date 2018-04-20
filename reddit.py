@@ -12,8 +12,8 @@ pattern = r'https://www\.reddit\.com/r/\w*/comments/(?P<post_id>\d*\w*)/\w*/' # 
 submission_id = re.search(pattern, url).group('post_id') # gets the post id of the reddit post in the url above
 
 ## your reddit info for the reddit module "praw" - please look up reddit api for more info on wha tyour need 
-reddit = praw.Reddit(client_id='INSERT CLIENT ID HERE',client_secret='INSERT CLIENT SECRET HERE'/
-	,password='INSERT YOUR REDDIT PW',user_agent='python commenter v1.0 by /u/insert_your_username',/
+reddit = praw.Reddit(client_id='INSERT CLIENT ID HERE',client_secret='INSERT CLIENT SECRET HERE',/
+	password='INSERT YOUR REDDIT PW',user_agent='python commenter v1.0 by /u/insert_your_username',/
 	username='INSERT YOUR REDDIT USERNAME')
 
 
